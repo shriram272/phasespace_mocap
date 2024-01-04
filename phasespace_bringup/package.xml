@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>phasespace_bringup</name>
+  <version>0.0.0</version>
+  <description>The phasespace_bringup package</description>
+
+  <maintainer email="rbccps01@todo.todo">rbccps01</maintainer>
+
+  <!-- You need to specify a license for your package, common choices include Apache-2.0, MIT, BSD -->
+  <license>TODO</license>
+
+  <!-- Update dependencies for ROS 2 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Add any other ROS 2 or system dependencies here -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>phasespace_msgs</depend> <!-- Make sure this custom message package is ported to ROS 2 -->
+
+  <!-- If you have test dependencies, add them here -->
+  <!-- <test_depend>...</test_depend> -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <!-- The export tag is still used in ROS 2 -->
+  <export>
+     <build_type>ament_cmake</build_type>
+    <!-- Other tools can request additional information be placed here -->
+  </export>
+</package>
